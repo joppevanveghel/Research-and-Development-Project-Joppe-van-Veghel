@@ -34,10 +34,10 @@
 
             function BorderBredaStyle(feature){
                 return {
-                    fillColor : 'red',
+                    fillColor : '#01106F',
                     weight : 2,
                     opacity : 1,
-                    color : 'red', 
+                    color : '#01106F', 
                     dashArray : 3,
                     fillOpacity : 0.1
                 }
@@ -48,8 +48,8 @@
                 layer.setStyle(
                     {
                         weight : 5,
-                        color : 'white',
-                        fillColor : 'white',
+                        color : '#33FF93',
+                        fillColor : '#33FF93',
                         fillOpacity : 0.2
                     }
                 );
@@ -109,7 +109,7 @@
                     fillColor: getColor(feature.properties.Finalscore),
                     weight : 2,
                     opacity : 1,
-                    color : 'white', 
+                    color : '#33FF93', 
                     dashArray : 3,
                     fillOpacity : 0.7
                 }
@@ -120,7 +120,7 @@
                     onEachFeature : Output_Locations_onEachFeature,
                     pointToLayer: function (feature, latlng) {
                         return new L.circleMarker(latlng, {
-                            radius: 10,
+                            radius: 7,
                             fillOpacity: 0.85
                         });
                     } 
